@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Αγορά βιβλίου</title>
+<meta charset="UTF-8";>
+<script>
+function money() 
+{
+
+var syn=0;
+var p=document.getElementById("number of books1").value;
+var c=document.getElementById("number of books2").value;
+var n=document.getElementById("number of books3").value;
+var m=document.getElementById("number of books4").value;
+var s=document.getElementById("number of books5").value;
+var q=document.getElementById("number of books6").value;
+var z=document.getElementById("number of books7").value;
+var x=document.getElementById("number of books8").value;
+var e=document.getElementById("number of books9").value;
+var i=document.getElementById("number of books10").value;
+
+syn=p*40 + c*35 + n*50 + m*70 + s*20 + q*40 +z*70 + x*50 + e*30 + i*25;
+alert(" Τo σύνολο είναι:" + syn)
+
+  
+}
+</script> 
+</head>
+<a
+href="menu.html">
+<p style="text-align:right">
+<button style="background-color:brown;  width:200px;height:90px;" ><p font color="PapayaWhip">ΕΠΙΣΤΡΟΦΗ ΣΤΟ ΑΡΧΙΚΟ MENU</p></button>
+</p>
+</a>
+<body style="background-color:papayawhip;">
+
+
+
+
+
+<br><br>
+
+
+<br>
+<ul style=" border: 3px solid brown;">
+<table style="border:3px solid brown; text-align:right">
+<tr><td>Email</td><td><input type="email"></td></tr>
+<tr><td>'Ονομα</td><td><input type="name"></td></tr>
+<tr><td>Επώνυμο</td><td><input type="surname"></td></tr>
+<tr><td>Τηλέφωνο</td><td><input type="phone number"></td></tr>
+</table> 
+<li><img src="images.jpg" alt="image"  ><p>40$</p></li>Αριθμό τίτλων: <input id="number of books1" text="number" name="number" type="number" value="0" min="0"> 
+<table style="border:3px solid brown">
+
+<li><img src="images (2).jpg" alt="image"  ><p><del>50$</del> ΠΡΟΣΦΟΡΑ</p><p>35$</p> </li>Αριθμό τίτλων: <input id="number of books2" text="number" name="number" type="number" value="0" min="0">
+<li><img src="images (3).jpg" alt="image"  ><p>50$</p> </li> Αριθμός τίτλων: <input id="number of books3" text="number" name="number" type="number" value="0" min="0" >
+
+<br><br>
+<li><img src="images (4).jpg" alt="image"  ><p>70$</p></li>Αριθμό τίτλων: <input id="number of books4" text="number" name="number" type="number" value="0" min="0" >
+<li><img src="images (5).jpg" alt="image"  ><p>20$</p></li>Αριθμός τίτλων: <input id="number of books5" text="number" name="number" type="number" value="0" min="0" >
+<Li><img src="images (6).jpg" alt="image"  ><p>40$</p></li> Αριθμός τίτλων: <input id="number of books6" text="number" name="number" type="number" value="0" min="0" >
+<br><br>
+<li><img src="images (7).jpg" alt="image "  ><p>70$</p></li>Αριθμός τίτλων: <input id="number of books7" text="number" name="number" type="number" value="0" min="0">
+<li><img src="images (8).jpg" alt="image "  ><p>50$</p></li>Αριθμός τίτλων: <input id="number of books8" text="number" name="number" type="number" value="0" min="0" >
+<li><img src="the-company-of-ghosts.jpg" alt="image "  ><p>30$</p></li>Αριθμός τίτλων: <input id="number of books9" text="number" name="number" type="number" value="0" min="0" >
+<br><br>
+<li><img src="Harry_Potter_and_the_Cursed_Child_Special_Rehearsal_Edition_Book_Cover.jpg"><p>25$</p></li>Αριθμός τίτλων: <input id="number of books10" text="number" name="number" type="number" value="0" min="0">
+</ul>
+
+<br><br><br>
+<button onClick="money()">Αγορά</button>
+
+       
+ 
+
+
+
+</body>
+</html>
