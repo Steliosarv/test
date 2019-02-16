@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Αγορά βιβλίου</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<meta charset="UTF-8">
+<script>
+function check2(){
+k=document.getElementById("books1").value;
+p=document.getElementById("number of books").value;
+if (p==""){
+	alert("Συμπλήρωσε τo κενό Αριθμό αντίτυπων τίτλων")
+} else if (k==" "){
+	alert("Συμπλήρωσε το κενό αριθμό τίτλων ")
+}
+}
+function sum() {
+var sum=0;
+var syn=0;
+var selectedValue = document.getElementById("country").value;
+var p=document.getElementById("number of books").value;
+
+ if (selectedValue=="mr"){
+    sum=50*p;
+   syn=sum + sum*11/100;
+
+   alert(" Τo σύνολο είναι:" + syn)}
+ else if (selectedValue=="the"){
+ sum= p*68;
+ syn=sum + sum*11/100;
+ alert(" Τo σύνολο είναι:" + syn)}
+ else if (selectedValue=="rage"){
+ sum=p*43;
+ syn=sum + sum*11/100;
+ alert(" Τo σύνολο είναι:" + syn)}
+ else if (selectedValue=="ca"){
+ sum= p*56;
+ syn=sum + sum*11/100;
+ alert(" Τo σύνολο είναι:" + syn)}
+}
+
+function check3()
+{
+		
+ 		var sValue =document.getElementById("first").value;
+        var pattern = /^[a-zA-Z]+$/;
+        if (pattern.test(sValue)) {
+            alert("Το first name ειναι έγκυρο");
+            return true;
+        } 
+            alert("Το first name πρέπει να είναι με λατινικούς χαρακτήρες !! " );
+            return false;
+
+    }
+function check4()
+{
+
+	var xValue =document.getElementById("last").value;
+    var pattern= /^[a-zA-Z]+$/;
+    if (pattern.test(xValue)){
+    	alert("Το Last name είναι έγκυρο");
+		 return true;
+        }
+        alert("Το Last name πρέπει να είναι με λατινικούς χαρακτήρες!!");
+		 return false;
+}        
+</script>
+
+
+
+
+
+	
+</head>
+<body>
+<p><ins>Αγορά βιβλίων</ins></p>
+<h2>Στοιχεία παραγγελίας</h2>
+<br>
+Ημερομηνία: 
+<div id="demo"></div>
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<br id="books1"><br><br>
+<Ins>Αριθμός Τίτλων:</ins><select id="country">
+<option value="mr">Μr. Mercedes</option>
+<option value="the">The shining</option>
+<option value="rage">Rage</option>
+<option value="ca">Carrie</option>
+</select>
+Αριθμός αντίτυπων τίτλων: <input id="number of books" text="number" name="number" type="number"><br>
+<div class="example1" >
+<input type="radio" name=""><img src="61cL+M-SN+L._SX425_.jpg"><br><br><br><br>
+Cardnumber<br>
+<input type="number" name="number"><br><br><br>
+<legend>Expiry day:</legend><input class="change" placeholder="MM" type="number" name="numbers">\<input class="change" placeholder="YY" type="number" name="numbers"><br>
+<br><br><legend>Security code:</legend>
+<input type="password" name="password" >			
+<br><br><legend>Cardholder name</legend>
+<input placeholder="First name" type="text" name="text" id="first"> <input placeholder="Last name" type="text" name="text" id="last"> <br><br>
+<input type="radio" name="yes" value="p1"> Save this card<br><br>
+<input type="reset" value="Cancel">
+<button onClick="check3(); check4();" >DONE</button><br><br>
+<input type="radio" name="payment" value="p2">Web Money<br><br>
+<input type="radio" name="payment" value="p3">Other paying methods<br><br>
+</div>
+<input type="reset" value="ΚΑΘΑΡΙΣΜΟΣ ΠΕΔΙΩΝ">
+<button  onClick="check2(); sum();"   >ΑΠΟΣΤΟΛΉ ΑΡΧΕΊΩΝ</button>
+
+
+</body>
+</html>
+	

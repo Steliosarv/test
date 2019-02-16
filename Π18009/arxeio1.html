@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Επικοινωνία</title>
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<meta charset="UTF-8">
+<script>
+function check(){
+x=document.getElementById("username").value;
+i=document.getElementById("phone number").value;
+y=document.getElementById("email").value;
+z=document.getElementById("text").value;
+if (x==""){
+	alert("Συμπλήρωσε τo κενό Ονοματεπώνυμο")
+}  if (y==""){
+	alert("Συμπλήρωσε το κενό email ")
+} if(z==""){
+	alert("Συμπλήρωσε το κενό Αίτημα, Ερώτημα")
+
+} if (z!="" && x!="" && y!=""){
+ 
+var answer=confirm("Είστε σίγουρoi ότι θέλετε να αποστείλετε το παρακάτω μαιλ; \n Ονοματεπώνυμο:" + x + "\n Τηλέφωνο:" + i + "\n Email:" + y + "\n Αίτημα, Ερώτημα:" + z);
+if (answer)
+	window.location="mailto:steliosarvanitidis1@gmail.com";
+    }
+	}
+</script>
+
+</head>
+<body>
+	<h3>Φόρμα επικοινωνιας</h3>
+	<fieldset>
+		Ονοματεπώνυμο*: <input id="username" type="text" ><br><br>
+		Τηλέφωνο: <input id="phone number" type="number" name="number"><br><br>
+		Email*: <input id="email" type="email" ><br><br>
+		Αίτημα, Ερώτημα*: <textarea id="text" type="text" ></textarea><br><br>
+		<input type="reset" value="Clear">
+		<button   onClick="check()"   >Submit</button>  
+		<br><br>
+		Τα πεδία με * ειναι υποχρεωτικα.
+	</fieldset>
+	
+	
+</html>	
+		

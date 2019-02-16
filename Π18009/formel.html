@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head><title>Δημιουργια φορμας συλλογης στοιχειων</title>
+<meta charset="UTF-8">
+<style>
+* {color: green; } /*Όλα τα στοιχεία*/
+div > p {color: blue;} /* Άμεσος απόγονος */
+ul em { color: red;} /*Περιλαμβάνεται*/
+h2 + p {color:black;} /* Γειτονικά*/
+p + h2 {color:navy;} /* Γειτονικά*/
+/*Χαρακτηριστικά σε πεδία input*/
+input[type="text"] { /* και όποιος άλλος τύπος */ color: red;}
+input[type="button"] { /* και όποιος άλλος τύπος */ color: red;}
+input[maxlength] {border: 1px solid red;}
+</style>
+</head>
+<body>
+	<form>
+		Ονομα: <input type="text" name="first name" size="30"><br>
+		Διευθυνση: <textarea name="addr" rows="3" cols="30" readonly > </textarea><br>
+		Ταχ.Κωδικας: <input type="text" name="zip" size="6" maxlength="6" placeholder="Ταχυδρομικη Κωδικοι" ><br>
+		
+	</form>
+	<br><br><br>
+	<label for="lastname2018"> Επώνυμο:</label>
+	<input for="text" id="lastname2018" name="lastname"><br>
+	Διευθυνση Κατοικιας: <textarea="homeaddr"></textarea><br>
+	<label for="homezip2018">Ταχ.Κωδικος Κατοικιας:</label>
+	<input type="text" name="homezip" id="homezip2018"><br>
+	<br><br><br>
+	<fieldset>
+			<legend>Στοιχεια επικοινωνιας</legend>
+			<label for="firstname2">Ονομα</label>
+			<input value="Ονομα" type="text" id="firstname2" name="firstname2"><br>
+			Διευθυνση: <textarea name="addr2"></textarea><br>
+			<label for="zip2">Ταχ.Κωδικος:</label>
+			<input placeholder="Ταχυδρομικοι Κωδικοι" type="text" name="zip2" id="zip2"><br>
+	</fieldset>
+	<br><br><br>
+	Χώρα: <select name="country" size="4" multiple>
+	<option>UK</option>
+	<option selected>Greece</option>
+	<option>Italy</option>
+	<option>France</option>
+	</select>
+	
+	<br>
+	Χώρα: <select multiple size="5" name="mediterranean">
+	<option>UK</option>
+	<optgroup label="Mεσογειακες Χωρες">
+	<option selected>Greece</option>
+	<option>Italy</option>
+	</optgroup>
+	<option>France</option>
+	</select><br>
+	<br><br><br><br>
+	<fieldset>
+	<legend>Μεθοδοι Πληρωμης</legend>
+	<label><input type="radio" name="payment" value="p1"></label>
+	<label><input type="radio" name="payment" value="p2"></label>
+	<label><input type="radio" name="payment" value="p3" checked></label>
+	</fieldset>
+	<br>
+	<br><br><br>
+**************
+<p>Αυτή είναι μια απλή πρόταση</p>
+<table>
+<tr><td>first</td><td>second</td><td>third</td></tr>
+<tr><td>fourth</td><td>fifth</td><td>sixth</td></tr>
+</table>
+<div>
+<p>Αυτή είναι μια απλή πρόταση 2</p>
+<strong><p>Αυτή είναι μια απλή πρόταση 3</p></strong>
+</div>
+<ul>
+<li><em>πρώτο στοιχείο λίστας</em></li>
+<li>δεύτερο στοιχείο λίστας</li>
+<li>τρίτο στοιχείο λίστας</li>
+</ul>
+<h2>Επικεφαλίδα HTML</h2>
+<p>Αυτή είναι μια απλή πρόταση 4</p>
+<h2>Επικεφαλίδα HTML</h2>
+	
+	
+</body>
+</html>	
